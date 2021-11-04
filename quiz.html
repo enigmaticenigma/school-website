@@ -14,8 +14,167 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"
     />
+    <link rel="stylesheet" href="css/style.css">
     <!-- MDB -->
     <link rel="stylesheet" href="css/mdb.min.css" />
   </head>
   <body>
     <!-- Start your project here-->
+    <header>
+      <!-- Navbar -->
+<nav class="navbar navbar-expand-lg bg-dark navbar-dark ">
+  <!-- Container wrapper -->
+  <div class="container-fluid">
+
+    <!-- Navbar brand -->
+    <a class="navbar-brand" href="#">Maxwell</a>
+
+    <!-- Toggle button -->
+    <button class="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <i class="fas fa-bars"></i>
+    </button>
+
+    <!-- Collapsible wrapper -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+        <!-- Link -->
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="quiz.html">Quiz</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="sources.html">Bibliography</a>
+        </li>
+
+        <!-- Dropdown -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-mdb-toggle="dropdown" aria-expanded="false">
+            Poems
+          </a>
+          <!-- Dropdown menu -->
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li>
+              <a class="dropdown-item" href="poems.html">Cinquain</a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="poems.html">Diamante</a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="poems.html">Haiku</a>
+            </li>
+          </ul>
+        </li>
+
+      </ul>
+
+    </div>
+  </div>
+  <!-- Container wrapper -->
+</nav>
+<!-- Navbar -->
+    </header>
+    <div class="container my-5">
+      <div id="intro">
+        <div class="counter">
+          <p class="prefix">Question:</p>
+          <h1 id="counter">1/10</h1>
+        </div>
+        <div class="score">
+          <p class="prefix">Score:</p>
+          <h1 id="score">3</h1>
+        </div>
+      </div>
+      <div class="question-holder row">
+        <div class="col-12">
+          <h1 id="question">What is the answer to this question?</h1>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-12">
+          <div class="answer-container card">
+            <div class="test">
+            <p class="answer-prefix">A</p>
+            <p class="answer-text" data-answer="a">Answer A</p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12">
+          <div class="answer-container card">
+            <p class="answer-prefix">B</p>
+            <p class="answer-text" data-answer="b">Answer B</p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12">
+          <div class="answer-container card">
+            <p class="answer-prefix">C</p>
+            <p class="answer-text" data-answer="c">Answer B</p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12">
+          <div class="answer-container card">
+            <p class="answer-prefix">D</p>
+            <p class="answer-text" data-answer="d">Answer D</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="endGameModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Game ended</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-mdb-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body" id="modal-body">...</div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-mdb-dismiss="modal"
+            >
+              Close
+            </button>
+            <button
+              type="button"
+              class="btn btn-primary"
+              data-mdb-dismiss="modal"
+              id="restart"
+            >
+              Restart
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- End your project here-->
+
+    <!-- MDB -->
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+    <!-- Custom scripts -->
+    <script type="text/javascript"></script>
+    <script src="js/scripts.js"></script>
+  </body>
+</html>
